@@ -8,10 +8,12 @@ Rails.application.routes.draw do
   get '/teachers/new', to: 'teachers#new'
   get '/teachers', to: 'teachers#new'
   post '/teachers', to: 'teachers#create'
+  ## get: get information.  like READ
+  ## post: update or create  like CREATE
 
   ## this is a student form.
   get '/students/new', to: 'students#new'
   get '/students', to: 'students#new'
-  post '/students/new', to: 'students#create'
+  post '/students', to: 'students#create'
 
 end
